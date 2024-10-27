@@ -1,4 +1,7 @@
 ---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Features from "../components/Features.astro";
 
 ---
 
@@ -8,9 +11,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Memoroo - Recuerdos de tus eventos en un sólo lugar</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="flex flex-col min-h-screen bg-gradient-to-b from-pink-50 to-purple-50">
+		<Header></Header>
+		<main class="flex-1">
+			<Hero></Hero>
+			<Features></Features>
+		</main>
 	</body>
 </html>
