@@ -1,0 +1,31 @@
+---
+import Check from "./icons/Check.astro";
+---
+
+<div class="flex flex-col p-6 rounded-lg justify-between border border-white text-white">
+    <div>
+        <h3 class="text-2xl font-bold text-center">Plan 1</h3>
+        <div class="mt-4 text-center text-white">
+            <span class="text-4xl font-bold">$9.99</span>
+        </div>
+        <ul class="mt-4 space-y-2">
+            <li class="flex items-center">
+                <Check className="text-green-500 mr-2 h-5 w-5" />
+                <span class="font-bold">Hasta 1000 fotos</span>
+            </li>
+            <li class="flex items-center">
+                <Check className="text-green-500 mr-2 h-5 w-5" />
+                <span class="font-bold">1 día de duración</span>
+            </li>
+            <li class="flex items-center">
+                <Check className="text-green-500 mr-2 h-5 w-5" />
+                <span class="font-bold">Filtros</span>
+            </li>
+            <li class="flex items-center">
+                <Check className="text-red-500 mr-2 h-5 w-5" />
+                <span class="font-bold">Descarga de álbum</span>
+            </li>
+        </ul>
+    </div>
+    <button class="mt-6 w-full px-4 py-3 text-sm font-medium text-center text-white bg-yellow-600 rounded-lg hover:bg-yellow-700 focus:ring-4 focus:ring-yellow-300">Elegir</button>
+</div>

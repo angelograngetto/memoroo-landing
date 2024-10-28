@@ -1,7 +1,11 @@
 ---
+import "../index.css"
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Features from "../components/Features.astro";
+import Princing from "../components/Princing.astro";
+import Comments from "../components/Comments.astro";
+import Footer from "../components/Footer.astro";
 
 ---
 
@@ -13,11 +17,14 @@ import Features from "../components/Features.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Memoroo - Recuerdos de tus eventos en un sólo lugar</title>
 	</head>
-	<body class="flex flex-col min-h-screen bg-gradient-to-b from-pink-50 to-purple-50">
-		<Header></Header>
+	<body class="flex flex-col min-h-screen">
+		<Header />
 		<main class="flex-1">
-			<Hero></Hero>
-			<Features></Features>
+			<Hero />
+			<Features />
+			<Princing />
+			<Comments />
+			<Footer />
 		</main>
 	</body>
 </html>
