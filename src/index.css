@@ -1,13 +1,76 @@
+@font-face {
+  font-family: "Memoroo";
+  src: url("./assets/fonts/louis-george-bold.ttf");
+  font-weight: bold;
+}
+
+:root {
+  --bg-color: #fbfbfe;
+  --text-color: #141415;
+  --primary: #6a66a9;
+  --secondary: #9d9bd4;
+  --tertiary: rgba(0, 0, 0, 0.03);
+  --accent: #6b68cf;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: rgb(10, 10, 10);
+  background: var(--bg-color);
 }
 
 header {
-  background: rgb(10, 10, 10);
+  background: var(--bg-color);
+}
+
+.color-bg {
+  color: var(--bg-color);
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-secondary {
+  color: var(--secondary);
+}
+
+.color-accent {
+  color: var(--accent);
+}
+
+.color-tertiary {
+  color: var(--tertiary);
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.memoroo-logo {
+  font-family: "Memoroo", sans-serif;
 }
 
 .bg-glass {
